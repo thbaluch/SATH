@@ -24,5 +24,4 @@ describe('get', () => {
     expect(get(object, 'x.y.z', 'default')).toBe('default');
   });
 
-  // Add more test cases to cover edge cases, nested structures, etc.
 });
