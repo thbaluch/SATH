@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test_coverage": "jest --coverage"
   },
   "author": "Your Name",
   "license": "MIT",
@@ -22,7 +23,10 @@
     "rules": {}
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "src/.internal/*"
+    ]
   },
   "engines": {
     "node": ">=14"
