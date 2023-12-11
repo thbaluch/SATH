@@ -1,6 +1,4 @@
-
-
-import add from '../src/filter';
+import filter from '../src/filter';
 
 describe('filter', () => {
   it('returns an array of elements for which the predicate returns truthy', () => {
