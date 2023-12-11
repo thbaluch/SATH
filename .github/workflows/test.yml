@@ -38,6 +38,7 @@ jobs:
 
       - name: Run tests
         run: npm test
+        
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2.2.3
       - name: Upload coverage to Coveralls
