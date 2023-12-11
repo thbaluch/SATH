@@ -7,12 +7,13 @@
     "test": "jest",
     "lint": "eslint .",
     "start": "node index.js",
-    "test_coverage": "jest --coverage"
+    "test_coverage": "jest --coverage",
+    "build": "babel src -d dist"
   },
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.23.5",
+    "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
     "babel-cli": "^6.26.0",
     "eslint": "^7.32.0",
