@@ -1,14 +1,37 @@
 {
-  "name": "software-testing-assignment",
+  "name": "SATH",
   "version": "1.0.0",
-  "description": "",
+  "description": "Description of your project",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "jest",
+    "lint": "eslint .",
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "rules": {}
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thbaluch/SATH.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/your-repo/issues"
+  },
+  "homepage": "https://github.com/your-username/your-repo#readme"
 }
