@@ -2,7 +2,7 @@
 
 ## Purpose of this repository
 
-[![Coverage Status](<a href='https://coveralls.io/github/thbaluch/SATH?branch=main'><img src='https://coveralls.io/repos/github/thbaluch/SATH/badge.svg?branch=main' alt='Coverage Status' /></a>)](https://coveralls.io/github/thbaluch/SATHhttps://coveralls.io/github/thbaluch/SATH )
+[![Coverage Status](<a href='https://coveralls.io/github/thbaluch/SATH?branch=main'><img src='https://coveralls.io/repos/github/thbaluch/SATH/badge.svg?branch=main' alt='Coverage Status' /></a>)](https://coveralls.io/github/thbaluch/SATH )
 This is a project template for students participating in Software Testing course
 at Tampere University.
 
