@@ -14,7 +14,7 @@ describe('add function', () => {
     });
 
     it('should add two floating-point numbers', () => {
-        expect(add(1.5, 2.5)).toBeCloseTo(4); // Use toBeCloseTo for floating-point comparisons
+        expect(add(1.5, 2.5)).toBeCloseTo(4); 
     });
 
     it('should add a number and zero', () => {
