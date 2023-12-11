@@ -1,28 +1,28 @@
 import filter from '../src/filter';
 
 describe('filter function', () => {
-    it('should filter elements based on the provided predicate', () => {
-        const users = [
-            { 'user': 'barney', 'active': true },
-            { 'user': 'fred',   'active': false }
-        ];
+  it('should return an empty array when filtering an empty array', () => {
+    const result = filter([], () => true);
+    expect(result).toEqual([]);
+  });
 
-        const result = filter(users, ({ active }) => active);
+  it('should filter an array based on a predicate', () => {
+    const users = [
+      { 'user': 'barney', 'active': true },
+      { 'user': 'fred',   'active': false }
+    ];
 
-        expect(result).toEqual([{ 'user': 'barney', 'active': true }]);
-    });
+    const expectedResult = [{ 'user': 'barney', 'active': true }];
+    const result = filter(users, ({ active }) => active);
 
-    it('should handle an empty array', () => {
-        const result = filter([], (value) => value);
+    expect(result).toEqual(expectedResult);
+  });
 
-        expect(result).toEqual([]);
-    });
+  it('should handle an array with all falsy values', () => {
+    const falsyValues = [false, 0, '', null, undefined, NaN];
+    const result = filter(falsyValues, (value) => value);
 
-    it('should handle an array with all falsy values', () => {
-        const result = filter([false, 0, '', null, undefined, NaN], (value) => value);
+    expect(result).toEqual([]);
+  });
 
-        expect(result).toEqual([]);
-    });
-
-    // Add more test cases based on your requirements
 });
